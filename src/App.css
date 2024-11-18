@@ -11,12 +11,12 @@
   background-color: rgba(255, 255, 240, 0.25);
   box-shadow: 20px 20px 20px #98FB98;
   font-family: Georgia;
-  padding: 25px 5px;
+  padding: 50px 5px;
   margin: 20%;
   margin-top: 50px;
 }
 iframe {
-  width: 100%;
+  width: 900px;
   height: 500px;
   border: none;
 }
