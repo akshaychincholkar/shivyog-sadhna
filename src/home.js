@@ -124,7 +124,7 @@ function DemoPageContent({ pathname }) {
       (pathname == '/hanuman_chalisa'?<HanumanChalisa/>:
       (pathname == '/ram_stuti'?<RamStuti/>:
       (pathname == '/hanuman_arti'?<HanumanArti/>:
-      (pathname == '/dss'?<PdfViewer file="./images/dss.pdf" />:
+      (pathname == '/dss'?<PdfViewer/>:
           "Coming soon!"))))
           //<PdfViewer file="/path/to/your/pdf-file.pdf" />
       }
