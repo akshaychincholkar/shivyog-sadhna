@@ -1,18 +1,40 @@
+import React, { useRef, useEffect } from 'react';
+import { Card, CardMedia, Box, Typography } from '@mui/material';
+import ram_raksha from './videos/ramraksha.mp4'
 export default function Ramraksha(){
+    const videoRef = useRef(null);
+    useEffect(() => {
+        // Set the volume to 50% when the component mounts
+        if (videoRef.current) {
+          videoRef.current.volume = 0.5;
+          videoRef.current.playbackRate = 1.5; // Set playback speed to 1.5x
+        }
+      }, []);
     return(
         <div class="content-area">
-        अस्य श्रीरामरक्षास्त्रोतमन्त्रस्य बुधकौशिक ऋषिः ।
+    <Card sx={{ maxWidth: 600, margin: 'auto', mt: 4, boxShadow: 3 }}>
+      <CardMedia>
+        {/* Video element */}
+        <Box component="video" controls autoPlay loop width="100%" ref={videoRef} >
+          <source src={ram_raksha} type="video/mp4" />
+          Your browser does not support the video tag.
+        </Box>
+      </CardMedia>
+    </Card>  
+   <h1> ॥ रामरक्षा स्तोत्र ॥ </h1>
+   <h2>विनियोग:</h2>
+    अस्य श्रीरामरक्षास्त्रोतमन्त्रस्य बुधकौशिक ऋषिः ।
 श्री सीतारामचंद्रो देवता ।
 अनुष्टुप छंदः। सीता शक्तिः ।<br/>
 श्रीमान हनुमान कीलकम ।
 श्री सीतारामचंद्रप्रीत्यर्थे रामरक्षास्त्रोतजपे विनियोगः । <br/>
-अथ ध्यानम्‌:<br/>
+<h2>अथ ध्यानम्‌:</h2>
 ध्यायेदाजानुबाहुं धृतशरधनुषं बद्धपदमासनस्थं,
 पीतं वासो वसानं नवकमल दल स्पर्धिनेत्रम् प्रसन्नम । <br/>
 वामांकारूढ़ सीता मुखकमलमिलल्लोचनम्नी,
 रदाभम् नानालंकारदीप्तं दधतमुरुजटामण्डलम् रामचंद्रम॥ <br/>
 
-इति ध्यानम्: <br/>
+<h2>इति ध्यानम्:</h2>
 चरितं रघुनाथस्य शतकोटि प्रविस्तरम् ।
 एकैकमक्षरं पुंसां महापातकनाशनम् ॥1॥ <br/>
 
@@ -141,7 +163,7 @@ export default function Ramraksha(){
 <br/>
 इति श्रीबुधकौशिकविरचितं श्रीरामरक्षास्तोत्रं संपूर्णम् ॥<br/>
 इस प्रकार बुधकौशिकद्वारा रचित श्रीराम रक्षा स्तोत्र सम्पूर्ण होता है।<br/>
-॥ श्री सीतारामचंद्रार्पणमस्तु ॥<br/>
+<h2>॥ श्री सीतारामचंद्रार्पणमस्तु ॥</h2><br/>
     </div>
     );
 }

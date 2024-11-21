@@ -19,6 +19,9 @@ import hanuman_arti from './images/arti.png'
 import HanumanArti from './contents/hanuman_aarti';
 import dss from './images/dss.png'
 import PdfViewer from './PdfViewer';
+import ImageCarousel from './ImageCorousal';
+import siddhakunjika from './images/siddhakunjika.png'
+import Siddhakunjika from './contents/siddhakunjika';
 const NAVIGATION = [
   {
     segment: 'ram_raksha',
@@ -77,6 +80,20 @@ const NAVIGATION = [
           />,
   },
   {
+    segment: 'siddhakunjika',
+    title: 'Siddha Kunjika Stotram',
+    icon: <Box
+            component="img"
+            src={siddhakunjika} // Custom icon for settings
+            alt="Settings"
+            sx={{
+            width: 24,
+            height: 24,
+            marginRight: 2,
+            }}
+          />,
+  },
+  {
     segment: 'dss',
     title: 'Durga Saptashati',
     icon: <Box
@@ -90,6 +107,7 @@ const NAVIGATION = [
             }}
           />,
   },
+
 ];
 
 const demoTheme = createTheme({
@@ -124,8 +142,10 @@ function DemoPageContent({ pathname }) {
       (pathname == '/hanuman_chalisa'?<HanumanChalisa/>:
       (pathname == '/ram_stuti'?<RamStuti/>:
       (pathname == '/hanuman_arti'?<HanumanArti/>:
-      (pathname == '/dss'?<PdfViewer/>:
-          "Coming soon!"))))
+      // (pathname == '/dss'?<PdfViewer/>:
+      (pathname == '/dss'?<ImageCarousel/>:
+      (pathname == '/siddhakunjika'?<Siddhakunjika/>:
+          "Coming soon!")))))
           //<PdfViewer file="/path/to/your/pdf-file.pdf" />
       }
     </Box>

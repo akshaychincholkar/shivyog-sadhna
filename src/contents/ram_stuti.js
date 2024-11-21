@@ -1,6 +1,18 @@
+import React from 'react';
+import { Card, CardMedia, Box, Typography } from '@mui/material';
+import ram_stuti from './videos/ram-stuti.mp4'
 export default function RamStuti(){
     return(
         <div class="content-area">
+    <Card sx={{ maxWidth: 600, margin: 'auto', mt: 4, boxShadow: 3 }}>
+      <CardMedia>
+        {/* Video element */}
+        <Box component="video" controls autoPlay loop width="100%">
+          <source src={ram_stuti} type="video/mp4" />
+          Your browser does not support the video tag.
+        </Box>
+      </CardMedia>
+    </Card>
         <h1>॥ श्री राम स्तुति ॥</h1>
         <h2>॥दोहा॥</h2><br/>
         श्री रामचन्द्र कृपालु भजुमन

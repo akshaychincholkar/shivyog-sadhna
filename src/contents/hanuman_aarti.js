@@ -1,5 +1,25 @@
+import React, { useRef, useEffect } from 'react';
+import { Card, CardMedia, Box, Typography } from '@mui/material';
+import hanuman_aarti from './videos/hanuman-aarti.mp4'
 export default function HanumanArti(){
+    const videoRef = useRef(null);
+    useEffect(() => {
+        // Set the volume to 50% when the component mounts
+        if (videoRef.current) {
+          videoRef.current.volume = 0.5;
+        //   videoRef.current.playbackRate = 1.5; // Set playback speed to 1.5x
+        }
+      }, []);    
     return(   <div class="content-area">
+    <Card sx={{ maxWidth: 600, margin: 'auto', mt: 4, boxShadow: 3 }}>
+      <CardMedia>
+        {/* Video element */}
+        <Box component="video" controls autoPlay loop width="100%" ref={videoRef} >
+          <source src={hanuman_aarti} type="video/mp4" />
+          Your browser does not support the video tag.
+        </Box>
+      </CardMedia>
+    </Card>            
         <h1>॥ हनुमान आरती ॥</h1>
         आरती कीजै हनुमान लला की ।<br/>
         दुष्ट दलन रघुनाथ कला की ॥ <br/>
