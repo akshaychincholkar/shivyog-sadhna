@@ -22,6 +22,8 @@ import PdfViewer from './PdfViewer';
 import ImageCarousel from './ImageCorousal';
 import siddhakunjika from './images/siddhakunjika.png'
 import Siddhakunjika from './contents/siddhakunjika';
+import atharvashirsh from './images/ganesh.png'
+import AtharvaShirsh from './contents/ganpati_atharvashirsha'
 const NAVIGATION = [
   {
     segment: 'ram_raksha',
@@ -107,7 +109,20 @@ const NAVIGATION = [
             }}
           />,
   },
-
+  {
+    segment: 'atharvashirsh',
+    title: 'Ganpati Atharvashirsh',
+    icon: <Box
+            component="img"
+            src={atharvashirsh} // Custom icon for settings
+            alt="Settings"
+            sx={{
+            width: 24,
+            height: 24,
+            marginRight: 2,
+            }}
+          />,
+  },
 ];
 
 const demoTheme = createTheme({
@@ -145,7 +160,8 @@ function DemoPageContent({ pathname }) {
       // (pathname == '/dss'?<PdfViewer/>:
       (pathname == '/dss'?<ImageCarousel/>:
       (pathname == '/siddhakunjika'?<Siddhakunjika/>:
-          "Coming soon!")))))
+      (pathname == '/atharvashirsh'?<AtharvaShirsh/>:
+          "Coming soon!"))))))
           //<PdfViewer file="/path/to/your/pdf-file.pdf" />
       }
     </Box>
