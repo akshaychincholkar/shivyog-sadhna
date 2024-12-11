@@ -26,6 +26,20 @@ import atharvashirsh from './images/ganesh.png'
 import AtharvaShirsh from './contents/ganpati_atharvashirsha'
 const NAVIGATION = [
   {
+    segment: 'atharvashirsh',
+    title: 'Ganpati Atharvashirsh',
+    icon: <Box
+            component="img"
+            src={atharvashirsh} // Custom icon for settings
+            alt="Settings"
+            sx={{
+            width: 24,
+            height: 24,
+            marginRight: 2,
+            }}
+          />,
+  },
+  {
     segment: 'ram_raksha',
     title: 'Ramraksha',
     icon: <Box
@@ -101,20 +115,6 @@ const NAVIGATION = [
     icon: <Box
             component="img"
             src={dss} // Custom icon for settings
-            alt="Settings"
-            sx={{
-            width: 24,
-            height: 24,
-            marginRight: 2,
-            }}
-          />,
-  },
-  {
-    segment: 'atharvashirsh',
-    title: 'Ganpati Atharvashirsh',
-    icon: <Box
-            component="img"
-            src={atharvashirsh} // Custom icon for settings
             alt="Settings"
             sx={{
             width: 24,
