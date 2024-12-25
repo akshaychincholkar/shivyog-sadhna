@@ -26,6 +26,7 @@ import atharvashirsh from './images/ganesh.png'
 import AtharvaShirsh from './contents/ganpati_atharvashirsha'
 import AigiriNandini from './contents/MahishasurMardini';
 import aigiri_nandini from './images/aigiri_nandini.png'
+import CardNavigator from './contents/affirmations';
 const NAVIGATION = [
   {
     segment: 'atharvashirsh',
@@ -138,6 +139,20 @@ const NAVIGATION = [
             }}
           />,
   },
+  {
+    segment: 'affirmations',
+    title: 'Affirmations',
+    icon: <Box
+            component="img"
+            src={aigiri_nandini} // Custom icon for settings
+            alt="Settings"
+            sx={{
+            width: 24,
+            height: 24,
+            marginRight: 2,
+            }}
+          />,
+  },
 ];
 
 const demoTheme = createTheme({
@@ -176,7 +191,10 @@ function DemoPageContent({ pathname }) {
       (pathname == '/dss'?<ImageCarousel/>:
       (pathname == '/siddhakunjika'?<Siddhakunjika/>:
       (pathname == '/atharvashirsh'?<AtharvaShirsh/>:
-       (pathname == '/mahishasur_mardini'?<AigiriNandini/>:"Coming soon!")))))))
+      (pathname == '/mahishasur_mardini'?<AigiriNandini/>:
+      (pathname == '/affirmations'?<CardNavigator/>:"Coming soon!")
+      )))))))
+      // (pathname == '/mahishasur_mardini'?<CardNavigator/>:"Coming soon!")))))))
           //<PdfViewer file="/path/to/your/pdf-file.pdf" />
       }
     </Box>
