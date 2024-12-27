@@ -1,51 +1,4 @@
-// import React, { useState } from 'react';
-// import { Card, CardContent, CardActions, Button, Typography, Box } from '@mui/material';
 
-// const cardData = [
-//   { id: 1, title: "Card 1", content: "This is the content of Card 1." },
-//   { id: 2, title: "Card 2", content: "This is the content of Card 2." },
-//   { id: 3, title: "Card 3", content: "This is the content of Card 3." },
-// ];
-
-// const CardNavigator = () => {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-
-//   const handlePrevious = () => {
-//     setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : cardData.length - 1));
-//   };
-
-//   const handleNext = () => {
-//     setCurrentIndex((prevIndex) => (prevIndex < cardData.length - 1 ? prevIndex + 1 : 0));
-//   };
-
-//   const currentCard = cardData[currentIndex];
-
-//   return (
-//     <Box display="flex" justifyContent="center" alignItems="center" height="100vh" bgcolor="#f5f5f5">
-//       <Card sx={{ width: 300, textAlign: "center" }}>
-//         <CardContent>
-//           <Typography variant="h5" component="div" gutterBottom>
-//             {currentCard.title}
-//           </Typography>
-//           <Typography variant="body2" color="text.secondary">
-//             {currentCard.content}
-//           </Typography>
-//         </CardContent>
-//         <CardActions sx={{ justifyContent: "space-between" }}>
-//           <Button size="small" onClick={handlePrevious}>
-//             Previous
-//           </Button>
-//           <Button size="small" onClick={handleNext}>
-//             Next
-//           </Button>
-//         </CardActions>
-//       </Card>
-//     </Box>
-//   );
-// };
-
-// export default CardNavigator;
-// ------------------------------------------
 import React, { useState } from "react";
 import { Box, Tabs, Tab, Card, CardContent, Typography, Button, Stack } from "@mui/material";
 
@@ -238,7 +191,15 @@ function CardNavigator() {
   return (
     <Box sx={{ width: "100%", p: 2 }}>
       {/* Tabs */}
-      <Tabs value={currentTab} onChange={handleTabChange} centered>
+      <Tabs value={currentTab} onChange={handleTabChange} centered
+                variant="scrollable"
+                scrollButtons="auto"
+                aria-label="scrollable tabs example"
+                sx={{
+                  "& .MuiTabs-scrollButtons": {
+                    display: "flex",
+                  },
+                }}>
         {tabData.map((tab) => (
           <Tab key={tab.id} label={tab.title} />
         ))}
@@ -246,9 +207,10 @@ function CardNavigator() {
 
       {/* Card Display */}
       <Box sx={{ mt: 3 }}>
-        <Card variant="outlined">
+        <Card variant="scrollable">
           <CardContent>
-            <Typography variant="h5" component="div">
+           {/* // <Typography variant="h5" component="div"> */}
+            <Typography variant="h5"  align="center" sx={{ wordWrap: "break-word" }}>
               {currentCard.text}
             </Typography>
           </CardContent>

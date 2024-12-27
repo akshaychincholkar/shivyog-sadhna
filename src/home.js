@@ -208,7 +208,7 @@ DemoPageContent.propTypes = {
 function Home(props) {
   const { window } = props;
 
-  const router = useDemoRouter('/ram_raksha');
+  const router = useDemoRouter('/atharvashirsh');
 
   // Remove this const when copying and pasting into your project.
   const demoWindow = window !== undefined ? window() : undefined;

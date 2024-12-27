@@ -23,6 +23,12 @@ root.render(
     {/* </Container> */}
     {/* <Branding/> */}
     <Home/>
+    {/* <AppProvider/> */}
+    {/* <ThemeProvider theme={theme}>
+      <ScrollableTabs />
+    </ThemeProvider> */}
+    {/* <ScrollableTabs /> */}
+    {/* <CardNavigator></CardNavigator> */}
     {/* <App /> */}
     {/* <LoginForm/> */}
     {/* <ImageCarousel/> */}
