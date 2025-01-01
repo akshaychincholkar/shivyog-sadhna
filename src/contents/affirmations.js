@@ -232,7 +232,7 @@ const tabData = [
                   onClick={handlePreviousCard}
                   disabled={activeCardIndex === 0}
                 >
-                  Previous
+                  &lt;
                 </Button>
                 <Typography variant="body2">
                   Card {activeCardIndex + 1} of {currentTab.cards.length}
@@ -243,7 +243,7 @@ const tabData = [
                   onClick={handleNextCard}
                   disabled={activeCardIndex === currentTab.cards.length - 1}
                 >
-                  Next
+                  &gt; 
                 </Button>
               </Box>
             </CardContent>
