@@ -187,26 +187,6 @@ const tabData = [
   },
 ];
 
-  // const tabData = [
-  //   {
-  //     id: 1,
-  //     title: "Title 1",
-  //     cards: [
-  //       { id: 1, text: "Text for card 1 in Tab 1" },
-  //       { id: 2, text: "Text for card 2 in Tab 1" },
-  //       { id: 3, text: "Text for card 3 in Tab 1" },
-  //     ],
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Title 2",
-  //     cards: [
-  //       { id: 1, text: "Text for card 1 in Tab 2" },
-  //       { id: 2, text: "Text for card 2 in Tab 2" },
-  //       { id: 3, text: "Text for card 3 in Tab 2" },
-  //     ],
-  //   },
-  // ];
 
   const currentTab = tabData[activeTab];
   const currentCard = currentTab.cards[activeCardIndex];
@@ -219,7 +199,9 @@ const tabData = [
           onChange={handleTabChange}
           indicatorColor="primary"
           textColor="primary"
-          variant="fullWidth"
+          variant="scrollable"
+          scrollButtons="auto"
+          orientation="vertical"
         >
           {tabData.map((tab) => (
             <Tab label={tab.title} key={tab.id} />
@@ -228,43 +210,45 @@ const tabData = [
       </AppBar>
 
       <Box sx={{ p: 3 }}>
-        <Card>
-          <CardContent>
-            <Typography
-              variant="body1"
-              sx={{ wordWrap: 'break-word' }}
-            >
-              {currentCard.text}
-            </Typography>
-            <Box
-              sx={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                mt: 2,
-              }}
-            >
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={handlePreviousCard}
-                disabled={activeCardIndex === 0}
+        <div class="content-area">
+          <Card>
+            <CardContent>
+              <Typography
+                variant="body1"
+                sx={{ wordWrap: 'break-word' }}
               >
-                Previous
-              </Button>
-              <Typography variant="body2">
-                Card {activeCardIndex + 1} of {currentTab.cards.length}
+                {currentCard.text}
               </Typography>
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={handleNextCard}
-                disabled={activeCardIndex === currentTab.cards.length - 1}
+              <Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  mt: 2,
+                }}
               >
-                Next
-              </Button>
-            </Box>
-          </CardContent>
-        </Card>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={handlePreviousCard}
+                  disabled={activeCardIndex === 0}
+                >
+                  Previous
+                </Button>
+                <Typography variant="body2">
+                  Card {activeCardIndex + 1} of {currentTab.cards.length}
+                </Typography>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={handleNextCard}
+                  disabled={activeCardIndex === currentTab.cards.length - 1}
+                >
+                  Next
+                </Button>
+              </Box>
+            </CardContent>
+          </Card>
+        </div>
       </Box>
     </Box>
   );
