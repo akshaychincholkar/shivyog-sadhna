@@ -255,7 +255,7 @@ function Home(props) {
       branding={{
         // logo: <img src={title} alt="logo" />,
         logo: <img src={title} alt="Krushna_Park_Logo.png" />,
-        title: 'Krushna Park Divine Chants',
+        title: 'Divine Chants',
       }}
       router={router}
       theme={demoTheme}
