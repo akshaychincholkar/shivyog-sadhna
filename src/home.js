@@ -8,7 +8,8 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { AppProvider } from '@toolpad/core/AppProvider';
 import { DashboardLayout } from '@toolpad/core/DashboardLayout';
 import { useDemoRouter } from '@toolpad/core/internal';
-import title from './images/title.png'
+// import title from './images/title.png'
+import title from './images/Krushna_Park_Logo.png'
 import ram from './images/ram.png'
 import Ramraksha from './contents/ramraksha';
 import hanuman from './images/hanuman.png'
@@ -24,10 +25,42 @@ import siddhakunjika from './images/siddhakunjika.png'
 import Siddhakunjika from './contents/siddhakunjika';
 import atharvashirsh from './images/ganesh.png'
 import AtharvaShirsh from './contents/ganpati_atharvashirsha'
+import aarti from './images/arti.png'
+import Aarti from './contents/Aarti';
+import ganesh_sahastranaam from './images/ganesh_sahastranaam.png'
+import GaneshSahastranaam from './contents/GaneshSahastranaam';
 import AigiriNandini from './contents/MahishasurMardini';
 import aigiri_nandini from './images/aigiri_nandini.png'
 import CardNavigator from './contents/affirmations';
 const NAVIGATION = [
+    {
+    segment: 'aarti',
+    title: 'Aarti',
+    icon: <Box
+            component="img"
+            src={aarti} // Custom icon for settings
+            alt="Settings"
+            sx={{
+            width: 24,
+            height: 24,
+            marginRight: 2,
+            }}
+          />,
+  },
+  {
+    segment: 'ganesh_sahastranaam',
+    title: 'Ganesh Sahastranaam',
+    icon: <Box
+            component="img"
+            src={ganesh_sahastranaam} // Custom icon for settings
+            alt="Settings"
+            sx={{
+            width: 24,
+            height: 24,
+            marginRight: 2,
+            }}
+          />,
+  },
   {
     segment: 'atharvashirsh',
     title: 'Ganpati Atharvashirsh',
@@ -139,20 +172,20 @@ const NAVIGATION = [
             }}
           />,
   },
-  {
-    segment: 'affirmations',
-    title: 'Affirmations',
-    icon: <Box
-            component="img"
-            src={aigiri_nandini} // Custom icon for settings
-            alt="Settings"
-            sx={{
-            width: 24,
-            height: 24,
-            marginRight: 2,
-            }}
-          />,
-  },
+  // {
+  //   segment: 'affirmations',
+  //   title: 'Affirmations',
+  //   icon: <Box
+  //           component="img"
+  //           src={aigiri_nandini} // Custom icon for settings
+  //           alt="Settings"
+  //           sx={{
+  //           width: 24,
+  //           height: 24,
+  //           marginRight: 2,
+  //           }}
+  //         />,
+  // },
 ];
 
 const demoTheme = createTheme({
@@ -192,8 +225,10 @@ function DemoPageContent({ pathname }) {
       (pathname == '/siddhakunjika'?<Siddhakunjika/>:
       (pathname == '/atharvashirsh'?<AtharvaShirsh/>:
       (pathname == '/mahishasur_mardini'?<AigiriNandini/>:
-      (pathname == '/affirmations'?<CardNavigator/>:"Coming soon!")
-      )))))))
+      (pathname == '/affirmations'?<CardNavigator/>:
+      (pathname == '/aarti'?<Aarti/>  :
+      (pathname == '/ganesh_sahastranaam'?<GaneshSahastranaam/> :  "Coming soon!")
+      )))))))))
       // (pathname == '/mahishasur_mardini'?<CardNavigator/>:"Coming soon!")))))))
           //<PdfViewer file="/path/to/your/pdf-file.pdf" />
       }
@@ -208,7 +243,7 @@ DemoPageContent.propTypes = {
 function Home(props) {
   const { window } = props;
 
-  const router = useDemoRouter('/atharvashirsh');
+  const router = useDemoRouter('/aarti');
 
   // Remove this const when copying and pasting into your project.
   const demoWindow = window !== undefined ? window() : undefined;
@@ -218,8 +253,9 @@ function Home(props) {
     <AppProvider
       navigation={NAVIGATION}
       branding={{
-        logo: <img src={title} alt="logo" />,
-        title: 'Shivyog Sadhna',
+        // logo: <img src={title} alt="logo" />,
+        logo: <img src={title} alt="Krushna_Park_Logo.png" />,
+        title: 'Krushna Park Divine Chants',
       }}
       router={router}
       theme={demoTheme}

@@ -89,19 +89,19 @@ const tabData = [
     title: "Solving Problems",
     cards: [
       { id: 1, text: "1. I’m good at solving problems. I like challenges and I meet them head on. " },
-      { id: 1, text: "2. Problems are my teachers. They help me to learn and grow. Without them, I would be going nowhere. With them, I am moving forward in the direction of my own goals. " },
-      { id: 1, text: "3. There is no problem which I cannot conquer. I am strong in mind, body, and spirit. My will, my strength, and my determination are always greater than any problem I face." },
-      { id: 1, text: "4. When I meet a new problem, I do not see the problem as my enemy. I know that finding the solution to the problem will move me forward in my own personal growth." },
-      { id: 1, text: "5. Because I know that problems are a key ingredient in my spiritual and mental education and preparation, I recognize that all problems are important to me. " },
-      { id: 1, text: "6. I do not fear problems, I solve them. I do not ignore problems, I confront them. I do not avoid problems, I conquer them. " },
-      { id: 1, text: "7. I know that every problem holds within itself the keys to its own solution. Therefore, the better I understand the problem, the clearer I am able to see its solution. " },
+      { id: 2, text: "2. Problems are my teachers. They help me to learn and grow. Without them, I would be going nowhere. With them, I am moving forward in the direction of my own goals. " },
+      { id: 3, text: "3. There is no problem which I cannot conquer. I am strong in mind, body, and spirit. My will, my strength, and my determination are always greater than any problem I face." },
+      { id: 4, text: "4. When I meet a new problem, I do not see the problem as my enemy. I know that finding the solution to the problem will move me forward in my own personal growth." },
+      { id: 5, text: "5. Because I know that problems are a key ingredient in my spiritual and mental education and preparation, I recognize that all problems are important to me. " },
+      { id: 6, text: "6. I do not fear problems, I solve them. I do not ignore problems, I confront them. I do not avoid problems, I conquer them. " },
+      { id: 7, text: "7. I know that every problem holds within itself the keys to its own solution. Therefore, the better I understand the problem, the clearer I am able to see its solution. " },
       { id: 8, text: "8. Having problems is not a problem for me. I am confident, self-assured, positive, and determined. I always know that I am going to overcome any problem I encounter––and I always do. " },
       { id: 9, text: "9. I am good at breaking large obstacles down into smaller pieces that are easier to handle. And I never make any problem appear to be larger than it actually is. " },
-      { id: 1, text: "10. I never worry. I turn “worry time” into positive, constructive, “solution time.” I keep my mind alert and open to all solutions—and solutions come quickly and easily to me. " },
-      { id: 1, text: "11. I have learned to recognize that many problems carry with them benefits and potential opportunities which would not have presented themselves had the problem not occurred in the first place. " },
-      { id: 1, text: "12. I do not seek to live a life which is free from all problems. Instead, I choose to live a life of finding solutions and enjoying the benefits which those solutions create." },
-      { id: 1, text: "13. Challenge, conquer, solution, and win are words which I live by daily. Challenges are opportunities. Conquering them is the inevitable outcome. " },
-      { id: 1, text: "14. “Solutions” are the stepping stones to my success, and “Winning” is my way of life." },
+      { id: 10, text: "10. I never worry. I turn “worry time” into positive, constructive, “solution time.” I keep my mind alert and open to all solutions—and solutions come quickly and easily to me. " },
+      { id: 11, text: "11. I have learned to recognize that many problems carry with them benefits and potential opportunities which would not have presented themselves had the problem not occurred in the first place. " },
+      { id: 12, text: "12. I do not seek to live a life which is free from all problems. Instead, I choose to live a life of finding solutions and enjoying the benefits which those solutions create." },
+      { id: 13, text: "13. Challenge, conquer, solution, and win are words which I live by daily. Challenges are opportunities. Conquering them is the inevitable outcome. " },
+      { id: 14, text: "14. “Solutions” are the stepping stones to my success, and “Winning” is my way of life." },
     ],
   },
   {
@@ -130,18 +130,18 @@ const tabData = [
     title: "Self-Responsibility",
     cards: [
       { id: 1, text: "1. I take full responsibility for everything about me––even the thoughts that I think. I am in control of the vast resources of my own mind." },
-      { id: 1, text: "2. I alone am responsible for what I do and what I tell myself about me. No one can share this responsibility with me. " },
-      { id: 1, text: "3. I also allow others to accept their responsibilities far themselves and I do not try to accept their responsibilities for them. " },
-      { id: 1, text: "4. I enjoy being responsible. It puts me in charge of being me––and that’s a challenge I enjoy. " },
-      { id: 1, text: "5. I allow no one else, at any time, to assume control or responsibility over my life or over anything that I do. My responsibility to others is an extension of my own responsibility to myself. " },
-      { id: 1, text: "6. I choose to leave nothing about me up to chance. When it comes to me––and anything in my life––I choose to CHOOSE. " },
+      { id: 2, text: "2. I alone am responsible for what I do and what I tell myself about me. No one can share this responsibility with me. " },
+      { id: 3, text: "3. I also allow others to accept their responsibilities far themselves and I do not try to accept their responsibilities for them. " },
+      { id: 4, text: "4. I enjoy being responsible. It puts me in charge of being me––and that’s a challenge I enjoy. " },
+      { id: 5, text: "5. I allow no one else, at any time, to assume control or responsibility over my life or over anything that I do. My responsibility to others is an extension of my own responsibility to myself. " },
+      { id: 6, text: "6. I choose to leave nothing about me up to chance. When it comes to me––and anything in my life––I choose to CHOOSE. " },
       { id: 7, text: "7. My choices are mine alone to make for myself. I do not, at any time, allow anyone else to make my choices for me. And I accept full responsibility for every choice and decision I make. " },
       { id: 8, text: "8. I always meet all of the obligations which I accept. And I accept no obligations which I will not meet. " },
       { id: 9, text: "9. I am trustworthy. I can be counted on. I have accepted winning responsibility for myself––and I always live up to the responsibilities I accept. " },
-      { id: 1, text: "10. There is no they on whom I lay the blame, or with whom I share my own personal responsibilities. I have learned the great secret of mastering my own destiny. I have learned that “they” is “me.” " },
-      { id: 1, text: "11. I have no need to make excuses and no one needs to carry my responsibility for me. I gladly carry my own weight––and I carry it well. " },
-      { id: 1, text: "12. Each day I acknowledge and accept the responsibility––not only for my own actions––but also for my emotions, my thoughts, and my attitude. " },
-      { id: 1, text: "13. I accept the responsibility for living my life in a way which creates my strengths, my happiness, my positive, healthy beliefs, and for my past, my present, and my future." },
+      { id: 10, text: "10. There is no they on whom I lay the blame, or with whom I share my own personal responsibilities. I have learned the great secret of mastering my own destiny. I have learned that “they” is “me.” " },
+      { id: 11, text: "11. I have no need to make excuses and no one needs to carry my responsibility for me. I gladly carry my own weight––and I carry it well. " },
+      { id: 12, text: "12. Each day I acknowledge and accept the responsibility––not only for my own actions––but also for my emotions, my thoughts, and my attitude. " },
+      { id: 13, text: "13. I accept the responsibility for living my life in a way which creates my strengths, my happiness, my positive, healthy beliefs, and for my past, my present, and my future." },
     ],
   },
   {
@@ -204,7 +204,7 @@ const tabData = [
           orientation="vertical"
         >
           {tabData.map((tab) => (
-            <Tab label={tab.title} key={tab.id} />
+            <Tab label={tab.title} key={tab.id} sx={{ textWrap: 'wrap', justifyContent: 'center' }} />
           ))}
         </Tabs>
       </AppBar>
@@ -235,7 +235,7 @@ const tabData = [
                   &lt;
                 </Button>
                 <Typography variant="body2">
-                  Card {activeCardIndex + 1} of {currentTab.cards.length}
+                  {activeCardIndex + 1} of {currentTab.cards.length}
                 </Typography>
                 <Button
                   variant="contained"

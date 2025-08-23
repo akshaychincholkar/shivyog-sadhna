@@ -10,7 +10,8 @@ import LayersIcon from '@mui/icons-material/Layers';
 // import { AppProvider } from '@toolpad/core/AppProvider';
 import { DashboardLayout } from '@toolpad/core/DashboardLayout';
 import { useDemoRouter } from '@toolpad/core/internal';
-import title from './images/title.png'
+// import title from './images/title.png'
+import title from './images/Krushna_Park_Logo.png'
 // Create Context for Branding
 import { AppBar, Toolbar, Typography, Box, Button } from "@mui/material";
 const BrandingContext = createContext();
@@ -21,7 +22,8 @@ const AppProvider = ({ children }) => {
   const [branding, setBranding] = useState({
     title: "My App",
     // logo: "/static/images/default-logo.png",
-    logo: "./images/title.png",
+    // logo: "./images/title.png",
+    logo: "./images/Krushna_Park_Logo.png",
   });
 
   const changeBranding = () => {
