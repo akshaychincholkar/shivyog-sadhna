@@ -32,6 +32,8 @@ import GaneshSahastranaam from './contents/GaneshSahastranaam';
 import AigiriNandini from './contents/MahishasurMardini';
 import aigiri_nandini from './images/aigiri_nandini.png'
 import CardNavigator from './contents/affirmations';
+import jai_ambe_gauri from './images/jai_ambe_gauri.png'
+import JaiAmbeGauri from './contents/jai_ambe_gauri';
 const NAVIGATION = [
     {
     segment: 'aarti',
@@ -172,6 +174,20 @@ const NAVIGATION = [
             }}
           />,
   },
+  {
+    segment: 'JaiAmbeGauri',
+    title: 'Jai Ambe Gauri',
+    icon: <Box
+            component="img"
+            src={jai_ambe_gauri} // Custom icon for settings
+            alt="Settings"
+            sx={{
+            width: 24,
+            height: 24,
+            marginRight: 2,
+            }}
+          />,
+  },
   // {
   //   segment: 'affirmations',
   //   title: 'Affirmations',
@@ -216,22 +232,22 @@ function DemoPageContent({ pathname }) {
       }}
     >
       {/* <Typography>Dashboard content for {pathname}</Typography> */}
-      {pathname == '/ram_raksha'?<Ramraksha/>: 
-      (pathname == '/hanuman_chalisa'?<HanumanChalisa/>:
-      (pathname == '/ram_stuti'?<RamStuti/>:
-      (pathname == '/hanuman_arti'?<HanumanArti/>:
-      // (pathname == '/dss'?<PdfViewer/>:
-      (pathname == '/dss'?<ImageCarousel/>:
-      (pathname == '/siddhakunjika'?<Siddhakunjika/>:
-      (pathname == '/atharvashirsh'?<AtharvaShirsh/>:
-      (pathname == '/mahishasur_mardini'?<AigiriNandini/>:
-      (pathname == '/affirmations'?<CardNavigator/>:
-      (pathname == '/aarti'?<Aarti/>  :
-      (pathname == '/ganesh_sahastranaam'?<GaneshSahastranaam/> :  "Coming soon!")
-      )))))))))
-      // (pathname == '/mahishasur_mardini'?<CardNavigator/>:"Coming soon!")))))))
-          //<PdfViewer file="/path/to/your/pdf-file.pdf" />
-      }
+    {pathname == '/ram_raksha'?<Ramraksha/>: 
+    (pathname == '/hanuman_chalisa'?<HanumanChalisa/>:
+    (pathname == '/ram_stuti'?<RamStuti/>:
+    (pathname == '/hanuman_arti'?<HanumanArti/>:
+    // (pathname == '/dss'?<PdfViewer/>:
+    (pathname == '/dss'?<ImageCarousel/>:
+    (pathname == '/siddhakunjika'?<Siddhakunjika/>:
+    (pathname == '/atharvashirsh'?<AtharvaShirsh/>:
+    (pathname == '/mahishasur_mardini'?<AigiriNandini/>:
+    (pathname == '/affirmations'?<CardNavigator/>:
+    (pathname == '/aarti'?<Aarti/>  :
+    (pathname == '/ganesh_sahastranaam'?<GaneshSahastranaam/> :
+    (pathname == '/JaiAmbeGauri'?<JaiAmbeGauri/> : "Coming soon!")))))))))))
+    // (pathname == '/mahishasur_mardini'?<CardNavigator/>:"Coming soon!"))))))))
+      //<PdfViewer file="/path/to/your/pdf-file.pdf" />
+    }
     </Box>
   );
 }
