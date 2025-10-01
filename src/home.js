@@ -132,22 +132,7 @@ const NAVIGATION = [
             marginRight: 2,
             }}
           />,
-  },
-  {
-    segment: 'siddhakunjika',
-    title: 'Siddha Kunjika Stotram',
-    icon: <Box
-            component="img"
-            src={siddhakunjika} // Custom icon for settings
-            alt="Settings"
-            sx={{
-            width: 24,
-            height: 24,
-            marginRight: 2,
-            }}
-          />,
-  },
-  {
+  },  {
     segment: 'dss',
     title: 'Durga Saptashati',
     icon: <Box
@@ -160,12 +145,27 @@ const NAVIGATION = [
             marginRight: 2,
             }}
           />,
-  },  {
+  }, 
+ {
     segment: 'mahishasur_mardini',
     title: 'Aigiri Nandini',
     icon: <Box
             component="img"
             src={aigiri_nandini} // Custom icon for settings
+            alt="Settings"
+            sx={{
+            width: 24,
+            height: 24,
+            marginRight: 2,
+            }}
+          />,
+  },
+    {
+    segment: 'siddhakunjika',
+    title: 'Siddha Kunjika Stotram',
+    icon: <Box
+            component="img"
+            src={siddhakunjika} // Custom icon for settings
             alt="Settings"
             sx={{
             width: 24,
