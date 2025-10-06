@@ -188,20 +188,20 @@ const NAVIGATION = [
             }}
           />,
   },
-  // {
-  //   segment: 'affirmations',
-  //   title: 'Affirmations',
-  //   icon: <Box
-  //           component="img"
-  //           src={aigiri_nandini} // Custom icon for settings
-  //           alt="Settings"
-  //           sx={{
-  //           width: 24,
-  //           height: 24,
-  //           marginRight: 2,
-  //           }}
-  //         />,
-  // },
+  {
+     segment: 'affirmations',
+     title: 'Affirmations',
+     icon: <Box
+             component="img"
+             src={aigiri_nandini} // Custom icon for settings
+             alt="Settings"
+           sx={{
+            width: 24,
+            height: 24,
+            marginRight: 2,
+           }}
+           />,
+   },
 ];
 
 const demoTheme = createTheme({
