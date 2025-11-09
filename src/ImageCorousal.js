@@ -11,12 +11,12 @@ const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
     // setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % 16);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % 19);
   };
 
   const handlePrev = () => {
     // setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + 16) % 16);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + 19) % 19);
   };
 
   return (
